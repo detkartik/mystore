@@ -12,6 +12,7 @@ django-cors-headers = "*"
 djangorestframework = "*"
 pillow = "*"
 braintree = "*"
+django-rest-knox = "*"
 
 [requires]
 python_version = "3.8"

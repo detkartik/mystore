@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'api',
     'api.category',
     'api.product',
-    'api.user',
+    'api.account',
     'api.order',
     'api.payment'
     
@@ -135,7 +135,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-AUTH_USER_MODEL = "user.CustomUser"
+AUTH_USER_MODEL = 'account.CustomUser'
 CORS_ORIGIN_ALLOW_ALL = True
 
 REST_FRAMEWORK = {
@@ -147,7 +147,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ]
     
 }

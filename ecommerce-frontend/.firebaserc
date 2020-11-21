@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myonlineshop-cffdc": {
+      "hosting": {
+        "ecommerce-frontend": [
+          "myonlineshop-cffdc"
+        ]
+      }
+    }
+  }
+}

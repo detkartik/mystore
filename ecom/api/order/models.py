@@ -1,5 +1,5 @@
 from django.db import models
-from api.user.models import CustomUser
+from api.account.models import CustomUser
 from api.product.models import Product 
 # Create your models here.
 
