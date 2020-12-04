@@ -1,2 +1,2 @@
 # mystore
-Django + React App for Ecommerce Application
+Django + Angular App for Ecommerce Application
